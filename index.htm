@@ -5,130 +5,161 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>VerbleHacks | Download / Update | Non-Official page</title>
-    <style>
-        @font-face {
-            font-family: Fregat Regular;
-            src: url(fonts/Fregat_regular.otf) format("opentype");
-        }
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<title>VerbleHacks | Download / Update | Non-Official page</title>
+	<style>
+		@font-face {
+			font-family: Fregat Regular;
+			src: url(fonts/Fregat_regular.otf) format("opentype");
+		}
 
-        @font-face {
-            font-family: Fregat Bold;
-            src: url(fonts/Fregat_bold.otf) format("opentype");
-        }
+		@font-face {
+			font-family: Fregat Bold;
+			src: url(fonts/Fregat_bold.otf) format("opentype");
+		}
 
-        @font-face {
-            font-family: Fregat Italic;
-            src: url(fonts/Fregat_italic.otf) format("opentype");
-        }
+		@font-face {
+			font-family: Fregat Italic;
+			src: url(fonts/Fregat_italic.otf) format("opentype");
+		}
 
-        @font-face {
-            font-family: Fregat Bold Italic;
-            src: url(fonts/Fregat_bold_italic.otf) format("opentype");
-        }
+		@font-face {
+			font-family: Fregat Bold Italic;
+			src: url(fonts/Fregat_bold_italic.otf) format("opentype");
+		}
 
-        * {
-            /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-            font-family: Fregat Regular;
-            font-size: 20px;
-        }
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: Fregat Regular;
+			font-weight: normal;
+			font-size: 20px;
+		}
 
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgb(35, 35, 35);
-        }
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+			background-color: rgb(35, 35, 35);
+		}
 
-        .wrapper {
-            justify-content: center;
-            align-items: center;
-            align-content: flex-start;
-            display: flex;
-            height: 100%;
-        }
+		h1 {
+			display: block;
+			margin-bottom: 3px;
+			font-size: 20px;
+		}
 
-        .main_content {
-            color: rgb(200, 200, 200);
-            box-sizing: border-box;
-            padding-top: 2em;
-            padding-right: 2em;
-            padding-bottom: 0.5em;
-            padding-left: 2em;
-            overflow: hidden;
-            text-align: center;
-            border: 1px solid rgb(216, 216, 216);
-            border-radius: 4px;
-        }
+		h2 {
+			display: block;
+			margin-bottom: 3px;
+			font-size: 19px;
+		}
 
-        .document {
-            padding: 5px;
-            border: 2px solid rgb(216, 216, 216);
-            border-radius: 4px;
-            margin-bottom: 7px;
-        }
+		a {
+			color: rgb(106, 140, 179);
+			text-decoration: none;
+		}
 
-        .icon_file {
-            display: block;
-            float: left;
-            background: url("doc_icons.png") no-repeat;
-            background-position: left -180px;
-            width: 30px;
-            height: 30px;
-        }
+		hr {
+			display: block;
+			margin: 10px 0;
+			width: 100%;
+			height: 0px;
+			border: 1px solid rgb(216, 216, 216);
+		}
 
-        .doc_title {
-            color: rgb(106, 140, 179)/*#42648b*/;
-            font-family: Fregat Bold;
-            text-decoration: none;
-            line-height: 30px;
-            margin-left: 3px;
-        }
+		.wrapper {
+			justify-content: center;
+			align-items: center;
+			align-content: flex-start;
+			display: flex;
+			height: 100%;
+		}
 
-        .authors {
-            margin-top: 20px;
-        }
-    </style>
+		.content {
+			color: rgb(200, 200, 200);
+			box-sizing: border-box;
+			padding-top: 1em;
+			padding-right: 1.5em;
+			padding-bottom: 0.5em;
+			padding-left: 1.5em;
+			overflow: hidden;
+			text-align: center;
+			border: 1px solid rgb(216, 216, 216);
+			border-radius: 4px;
+		}
+
+		.download_button {
+			border: 2px solid rgb(216, 216, 216);
+			border-radius: 4px;
+			padding: 5px;
+
+			font-family: Fregat Bold;
+			line-height: 30px;
+			margin-bottom: 7px;
+		}
+
+		.download_button_icon {
+			display: block;
+			width: 30px;
+			height: 30px;
+			float: left;
+			border-radius: 2px;
+			margin-right: 3px;
+		}
+
+		.authors {
+			margin-top: 15px;
+		}
+
+		.copy_description {
+			display: block;
+			font-family: Fregat Italic;
+			font-size: 13px;
+		}
+
+		.copy_names {
+			font-family: Fregat Bold Italic;
+			font-size: inherit;
+		}
+	</style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="main_content">
-            <span style="display: block; margin-bottom: 3px;">For NFS: Most Wanted</span>
-            <div class="document">
-                <a class="icon_file" href="VerbleHacks_Storage/VerbleHack_v3.1.zip"></a>
-                <a class="doc_title" href="VerbleHacks_Storage/VerbleHack_v3.1.zip">Get New VerbleHack</a>
-            </div>
-            <span style="display: block; margin-bottom: 3px; font-size: 19px;">Archive</span>
-            <div class="document">
-                <a class="icon_file" href="VerbleHacks_Storage/VerbleHack_v2.4.zip"></a>
-                <a class="doc_title" href="VerbleHacks_Storage/VerbleHack_v2.4.zip">Get VerbleHack v2.4</a>
-            </div>
-            <div class="document">
-                <a class="icon_file" href="VerbleHacks_Storage/VerbleHack_v2.zip"></a>
-                <a class="doc_title" href="VerbleHacks_Storage/VerbleHack_v2.zip">Get VerbleHack v2.0</a>
-            </div>
-            <hr size="2px" width="100%" />
-            <span style="display: block; margin-bottom: 3px;">For NFS: Carbon</span>
-            <div class="document">
-                <a class="icon_file" href="VerbleHacks_Storage/VerbleHack_v1.0.zip"></a>
-                <a class="doc_title" href="VerbleHacks_Storage/VerbleHack_v1.0.zip">Get VerbleHack v1.0</a>
-            </div>
-            <div class="authors">
-                <span style="display: block; font-size: 13px; font-family: Fregat Italic;">Site - ©
-                    <a href="https://vk.com/timofeheus" style="color: rgb(106, 140, 179); text-decoration: none; font-family: Fregat Bold Italic; font-size: 13px;">Timoha Timohavich</a>
-                </span>
-                <span style="display: block; font-size: 13px; font-family: Fregat Italic;">VerbleHack - ©
-                    <a href="https://vk.com/hacked_ys" style="color: rgb(106, 140, 179); text-decoration: none; font-family: Fregat Bold Italic; font-size: 13px;">Vlad Esin</a>
-                </span>
-            </div>
-        </div>
-    </div>
+	<div class="wrapper">
+		<div class="content">
+			<h1>For NFS: Most Wanted</h1>
+			<a href="VerbleHacks_Storage/VerbleHack_v3.1.zip">
+				<div class="download_button">
+					<img class="download_button_icon" src="doc_icon.png" alt="Document Icon" />VerbleHack v3.1</div>
+			</a>
+
+			<h2>Archive</h2>
+			<a href="VerbleHacks_Storage/VerbleHack_v2.4.zip">
+				<div class="download_button">
+					<img class="download_button_icon" src="doc_icon.png" alt="Document Icon" />VerbleHack v2.4</div>
+			</a>
+			<a href="VerbleHacks_Storage/VerbleHack_v2.0.zip">
+				<div class="download_button">
+					<img class="download_button_icon" src="doc_icon.png" alt="Document Icon" />VerbleHack v2.0</div>
+			</a>
+
+			<hr size="2px" width="100%" />
+
+			<h1>For NFS: Carbon</h1>
+			<a href="VerbleHacks_Storage/VerbleHack_v1.0.zip">
+				<div class="download_button">
+					<img class="download_button_icon" src="doc_icon.png" alt="Document Icon" />VerbleHack v1.0</div>
+			</a>
+
+			<div class="authors">
+				<span class="copy_description">Site - ©<a href="https://vk.com/timofeheus" class="copy_names">Timoha Timohavich</a></span>
+				<span class="copy_description">VerbleHack - ©<a href="https://vk.com/hacked_ys" class="copy_names">Vlad Esin</a></span>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
