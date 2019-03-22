@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /doc_icon
-Disallow: /favicon.png
 Disallow: /fonts
 Disallow: /VerbleHacks_Storage
